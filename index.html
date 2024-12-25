@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html style="margin: 0; height: 100%; ">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab 5</title>
+        <link rel="stylesheet" href="style.css" media="screen and (min-width: 680px)">
+        <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 680px)">
+        <script src="script.js" defer></script>
+    </head>
+<body>
+    <div class="container">
+        <div id="block1" class="block1">
+        <header class="header"> 
+                    <div class="left-header">
+                <h1>Get to know your</h1>
+                <h2 >DESTINY</h2>
+                <button class="swap-btn" onclick="swap()">Change X - Y</button>
+                <a href="#" class="edit-link" ondblclick="editHTML(1)">Edit</a>
+            </div>
+            <div class="logo">
+                <h4>TARODA</h4>
+            </div>
+        </header>
+        </div>
+
+        <main class="main-content">
+            <div class="left-main">
+                <div class="central-main">
+                    <div class="central-left">
+                        <div class="block2" id="block2">
+                            <input type="color" id="colorpicker" value="#000000" style="width:80%;">
+                            <button type="button" onclick="changeColor()">Blur</button>
+                            <p>The Major Arcana consists of 22 cards, each representing significant themes and archetypes in life. These cards reveal major life events, turning points, and spiritual insights.</p>
+                            <a href="#" class="edit-link" ondblclick="editHTML(2)">Edit</a>
+                        </div>
+                        <div class="block5">
+                            <p>The Minor Arcana includes 56 cards divided into four suits: Wands, Cups, Swords, and Pentacles. These cards reflect everyday events, emotions, thoughts, and aspects of the material world.</p>
+                            <a href="#" class="edit-link" ondblclick="editHTML(5)">Edit</a>
+                        </div>
+                    </div>
+                    <div class="block3">
+                        <a href="#" class="edit-link" ondblclick="editHTML(3)">Edit</a>
+                        <input type="range" id="range" name="range" min="1" max="25" value="1" oninput="updateRadiusValue()">
+                        <span id="radiusValue">1</span>
+                        <div>
+                        <button onclick="calculateArea()">Caluclate area of circle</button>
+                         </div>
+                       
+                         <div id="task3">
+                            <h2>Enter 10 numbers</h2>
+                            <form id="numberForm">
+                                <input type="number" name="number" required>
+                                <input type="number" name="number" required>
+                                <input type="number" name="number" required>
+                                <input type="number" name="number" required>
+                                <input type="number" name="number" required>
+                                <input type="number" name="number" required>
+                                <input type="number" name="number" required>
+                                <input type="number" name="number" required>
+                                <input type="number" name="number" required>
+                                <input type="number" name="number" required>
+                                <button type="button" onclick="findMaxNumbers()">Find quantity of max numbers</button>
+                            </form>
+                        </div>
+                        <div id="S of circle">
+                            <strong>Result:</strong> <span id="areaOutput">0</span>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="block6">
+                    <h5 class="book">BOOK A READING</h5>
+                    <p>Get your Online Reading Tarot right now!</p>
+                    <img class="tarot-card"
+                    src="https://i.pinimg.com/736x/34/b2/7a/34b27a2e19657919c8e08b4728b36651.jpg"
+                    alt="Tarot card"/> 
+                    <a href="#" class="edit-link" ondblclick="editHTML(6)">Edit</a>
+                </div>
+            </div>
+            <div class="block4">
+                <ul>
+                    <p>Site Map</p>
+                    <li>Main</li>
+                    <li>Tarot Reading</li>
+                    <li>Card Meanings</li>
+                    <li>Yes/No Tarot</li>
+                    <li>Daily Tarot</li>
+                </ul>
+                <a href="#" class="edit-link" ondblclick="editHTML(4)">Edit</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
